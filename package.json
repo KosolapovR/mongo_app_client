@@ -6,7 +6,7 @@
     "react",
     "starter"
   ],
-  "proxy": "http://servercd .:8080",
+  "proxy": "http://server:8080",
   "main": "src/index.js",
   "dependencies": {
     "react": "16.12.0",
