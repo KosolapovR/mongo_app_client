@@ -2,11 +2,11 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY package.json ./app
+COPY package.json /app
 
 RUN npm install --silent
 
-COPY . ./app
+COPY . /app
 
 EXPOSE 3000
 
