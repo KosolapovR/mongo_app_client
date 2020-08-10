@@ -7,7 +7,7 @@ function useGetUsers() {
     const abortController = new AbortController();
     const signal = abortController.signal;
 
-    fetch(`${env.process.BASE_URL}/users`, {
+    fetch(`${process.env.BASE_URL}/users`, {
       signal: signal
     }).then((response) => {
       response.json().then((fetchedUsers) => {
